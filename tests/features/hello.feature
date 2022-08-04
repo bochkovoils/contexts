@@ -17,8 +17,8 @@ Feature: Hello
   Scenario: ForChecking
     Given REPEAT 11
     Given MUST FAIL
-    Given Value must be more then 10
+    Given Value must be more than 10
     Given END
     Given Add 1
     Given END
-    Given Value must be more then 10
+    Given Value must be more than 10

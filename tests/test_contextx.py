@@ -132,7 +132,7 @@ def must_fail_block():
     ContextHolder().add(MustFailBlock())
 
 
-@given("Value must be more then 10")
+@given("Value must be more than 10")
 @context_step()
 def check_value():
     assert GlobalContainer.COUNT > 10
