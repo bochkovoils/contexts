@@ -60,9 +60,9 @@ class MustFailBlock(ContextBlock):
     def execute(self):
         try:
             self.run_all()
-            assert False
         except Exception:
-            assert True
+            return
+        assert False
 
 class RepeatBlock(ContextBlock):
     def __init__(self, times=10):
