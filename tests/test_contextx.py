@@ -117,7 +117,7 @@ def assert_something():
     assert True
 
 
-@given(parsers.parse("AWAIT {seconds_} await {await_}"))
+@given(parsers.parse("AWAIT {seconds_} with delta {await_}"))
 def set_await_context(seconds_, await_):
     ContextHolder().add(AwaitBlock(int(seconds_), int(await_)))
 
@@ -130,11 +130,6 @@ def repeat_context(count):
 @given(parsers.parse("MUST FAIL"))
 def must_fail_block():
     ContextHolder().add(MustFailBlock())
-
-
-@given(parsers.parse("TRY"))
-def set_await_context(seconds_, await_):
-    ContextHolder().add(AwaitBlock(int(seconds_), int(await_)))
 
 
 @given("Value must be more then 10")

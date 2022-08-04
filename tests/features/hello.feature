@@ -1,7 +1,7 @@
 Feature: Hello
 
   Scenario: Hello_world
-    Given AWAIT 60 await 1
+    Given AWAIT 60 with delta 1
     Given assert global time
     Given END
     Given hello
@@ -9,7 +9,7 @@ Feature: Hello
 
   Scenario: Must_fail
     Given MUST FAIL
-    Given AWAIT 10 await 1
+    Given AWAIT 10 with delta 1
     Given assert global time
     Given END
     Given END
