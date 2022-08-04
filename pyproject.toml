@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "contextx"
+name = "contexts"
 version = "0.1.0"
 description = ""
 authors = ["Bochkovoi Leonid <bochkovoils@mail.ru>"]
